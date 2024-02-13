@@ -23,10 +23,6 @@ public class UserResponseConverter {
                 user.getLastName(),
                 user.getAge(),
                 user.getEmail(),
-                user.getIsActive(),
-                user.getProducts()
-                        .stream()
-                        .map(userProductResponseConverter::convertToProductUser)
-                        .collect(Collectors.toList()));
+                user.getIsActive());
     }
 }

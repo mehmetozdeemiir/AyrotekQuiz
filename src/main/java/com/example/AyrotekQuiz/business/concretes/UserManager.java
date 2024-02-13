@@ -30,6 +30,7 @@ public class UserManager implements UserService {
                 .age(userRequest.getAge())
                 .email(userRequest.getEmail())
                 .isActive(true).build());
+        log.info("kullanıcı kaydedildi");
         return userResponseConverter.fromUser(user);
     }
 

@@ -17,7 +17,6 @@ public class UserResponse {
     private Integer age;
     private String email;
     private Boolean isActive;
-    private List<UserProductResponse> productList;
 
 
 }
